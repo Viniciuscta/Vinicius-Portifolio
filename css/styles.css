@@ -1,0 +1,370 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #0e0f10;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+html{
+    scroll-behavior: smooth;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}
+#experienceSection{
+    scroll-margin-top: -100px;
+}
+#htmlprojectsSection{
+    scroll-margin-top: -50px;
+}
+
+/* Pré definitions*/
+
+.secondary-title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.mg_top {
+    padding: 10rem;
+}
+.main__description{
+    text-align: center;
+    font-weight: 300;
+}
+
+/* Menu section*/
+
+.menu {
+    height: 100vh;
+    width: 10%;
+    padding: 20px;
+    background-color: #1d1d22;
+    width: 10%;
+    vertical-align: top;
+    text-align: center;
+    position: fixed;
+    height: 100%;
+}
+.menu__description{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+.menu__description:hover {
+    color: #25ca7f;
+    transition-delay:0.1s;
+}
+.menu i {
+    font-size: 40px;
+    margin-top: 30px;
+}
+/* Content */
+
+.content{
+    height: 100vh;
+    background: #0e0f10;
+    width: 100%;
+    vertical-align: top;
+    padding: 0 15% 0 25%;
+}
+
+/* About me section section*/
+.about-me{
+    height: 1000px;
+}
+.main__title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.card-box {
+    background: #070708;
+    padding: 30px;
+    display: flex;
+    margin: 0 5% 100px 0%;
+    border-radius: 10px;
+    width: 100%;
+}
+.card-box-picture img {
+    background-position: center;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin: 0 auto;
+    width: 300px;
+}
+.card-box-body{
+    margin-left: 20px;
+    margin-top:25px;
+}
+
+/* Services section */
+.service-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 6%;
+    margin-top: 30px;
+}
+.service-container .service__item{
+    height: 200px;
+    width: 28%;
+    text-align: center;
+    flex-direction: column;
+    background:#070708;
+    border-radius: 10px;
+    margin: 0px 16px 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-container .service__item .service__item__icon {
+    margin-top: 40px;
+    font-size: 25px;
+    background-color:#0e0f10;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.service__item__icon i {
+    color: white;
+}
+.service-container .service__item h4 {
+    margin-top: 20px;
+}
+.service-container .service__item p {
+    font-size: 13px;
+}
+
+
+/* Experience/Education section */
+.experience{
+    height: 1000px;
+}
+.resume{
+    display: flex;
+}
+.education-section{
+    width: 50%;
+    height: 300px;
+    background-color: #070708;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 20px;
+}
+.education-section:hover{
+    border-left: 1px solid #25ca7f;
+}
+.experience-section{
+    width: 50%;
+    height: 300px;
+    background-color: #070708;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    position: relative;
+}
+.experience-section:hover{
+    border-left: 1px solid #25ca7f;
+}
+.education__description{
+    border-left: 2px solid #25ca7f;
+    margin-left: 20px;
+    padding: 20px;
+    position: relative;
+}
+.timeline__marker{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 22px;
+    left: -10px;
+}
+.timeline__marker__circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #25ca7f;
+    border: 1px solid #25ca7f;
+}
+.timeline__marker__line{
+    height: 2px;
+    width: 15px;
+    background: #25ca7f;
+}
+.timeline__marker:hover{
+    background-color:#070708;
+}
+.experience__description{
+    border-left: 2px solid #25ca7f;
+    margin-left: 20px;
+    padding: 8px;
+    position: relative;
+}
+.experience__description p {
+    margin-top: 10px;
+}
+
+/* Contact section */
+
+.contact{
+    height: 100vh;
+}
+
+.card-box-2{
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height: 200px;
+    padding: auto;
+    background: #070708;
+    display: flex;
+    border-radius: 10px;
+}
+.contact__wpp {
+    color: #fff;
+    padding: 15px;
+    width: 33.33%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    white-space: pre-line;
+}
+.contact__linkedin{
+    color: #fff;
+    padding: 15px;
+    width: 33.33%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.contact__github {
+    color: #fff;
+    padding: 15px;
+    width: 33.33%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__icons{
+    margin: 10px;
+    text-decoration: none;
+}
+.contact__icons i {
+    font-size: 45px;
+    margin: 30px;
+}
+.contact__wpp , .contact__wpp p{
+    margin: 0px;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+.contact__icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.contact__icons a:hover {
+    color: #25ca7f;
+}
+
+
+/* Animation section */
+
+h2.fill-animation {
+    position: relative;
+    font-size:20px;
+    color:#252839;
+    -webkit-text-stroke: 0.3vw #070708;
+    text-transform: uppercase;
+}
+
+h2.fill-animation::before {
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height: 100%;
+    color:#01fe87;
+    -webkit-text-stroke: 0vw #383d52;
+    overflow: hidden;
+    animation: animate 4s linear forwards;
+}
+
+@keyframes animate {
+
+
+    0% ,10%{
+        width: 0;
+    }
+    70%,90%, 100%{
+        width: 100%;
+    }
+}
+.name-title{
+    width: 14.5%;
+}
+.main__projects {
+    width: 100%;
+    display: flex;
+    margin-left: 20px;
+    flex-wrap: wrap;
+
+}
+.projects__img img{
+    width: 450px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 20%;
+}
+.projects__cardbox{
+    width: 45%;
+    margin-right: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #070708;
+    display: flex;
+    height: 400px;
+    border-radius: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.projects{
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+}
+.title{
+    text-align: center;
+    padding: 100px;
+}
+footer {
+    position:absolute;
+    width:100%;
+    height:60px;
+    background:#6cf;
+}
