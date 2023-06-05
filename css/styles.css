@@ -24,7 +24,7 @@ html{
     scroll-margin-top: -100px;
 }
 #htmlprojectsSection{
-    scroll-margin-top: -50px;
+    scroll-margin-top: -300px;
 }
 
 /* Pré definitions*/
@@ -35,11 +35,13 @@ html{
     text-align: center;
 }
 .mg_top {
-    padding: 10rem;
+    padding-top: 20rem;
+    padding-bottom: 5rem;
 }
 .main__description{
     text-align: center;
     font-weight: 300;
+    padding: 20px;
 }
 
 /* Menu section*/
@@ -82,7 +84,7 @@ html{
 
 /* About me section section*/
 .about-me{
-    height: 1000px;
+    height: auto;
 }
 .main__title {
     margin-top: 50px;
@@ -105,9 +107,9 @@ html{
     height: 300px;
     margin: 0 auto;
     width: 300px;
+    margin: 10px;
 }
 .card-box-body{
-    margin-left: 20px;
     margin-top:25px;
 }
 
@@ -115,9 +117,17 @@ html{
 .service-container{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-left: 6%;
     margin-top: 30px;
+}
+.service-container__son{
+    display: flex;
+    flex-wrap: wrap;
+}
+.m_right{
+    margin-left: 435px;
+    margin-bottom: 50px;
 }
 .service-container .service__item{
     height: 200px;
@@ -177,19 +187,19 @@ html{
     height: 300px;
     background-color: #070708;
     border-radius: 10px;
-    border: 1px solid black;
     padding: 10px;
     margin-left: 20px;
-    position: relative;
 }
 .experience-section:hover{
     border-left: 1px solid #25ca7f;
 }
+/*
 .education__description{
     border-left: 2px solid #25ca7f;
     margin-left: 20px;
     padding: 20px;
     position: relative;
+    padding-left: 23px;
 }
 .timeline__marker{
     display: flex;
@@ -213,15 +223,17 @@ html{
 .timeline__marker:hover{
     background-color:#070708;
 }
+
 .experience__description{
     border-left: 2px solid #25ca7f;
     margin-left: 20px;
-    padding: 8px;
+    padding: 11px;
     position: relative;
 }
 .experience__description p {
     margin-top: 10px;
 }
+*/
 
 /* Contact section */
 
@@ -289,46 +301,47 @@ html{
 
 
 /* Animation section */
+/*
+    h2.fill-animation {
+        position: relative;
+        font-size:20px;
+        color:#252839;
+        -webkit-text-stroke: 0.3vw #070708;
+        text-transform: uppercase;
+    }
 
-h2.fill-animation {
-    position: relative;
-    font-size:20px;
-    color:#252839;
-    -webkit-text-stroke: 0.3vw #070708;
-    text-transform: uppercase;
-}
-
-h2.fill-animation::before {
-    content: attr(data-text);
-    position: absolute;
-    top:0;
-    left:0;
-    width: 0;
-    height: 100%;
-    color:#01fe87;
-    -webkit-text-stroke: 0vw #383d52;
-    overflow: hidden;
-    animation: animate 4s linear forwards;
-}
-
-@keyframes animate {
-
-
-    0% ,10%{
+    h2.fill-animation::before {
+        content: attr(data-text);
+        position: absolute;
+        top:0;
+        left:0;
         width: 0;
+        height: 100%;
+        color:#01fe87;
+        -webkit-text-stroke: 0vw #383d52;
+        overflow: hidden;
+        animation: animate 4s linear forwards;
     }
-    70%,90%, 100%{
-        width: 100%;
+
+    @keyframes animate {
+
+
+        0% ,10%{
+            width: 0;
+        }
+        70%,90%, 100%{
+            width: 100%;
+        }
     }
-}
+    */
 .name-title{
     width: 14.5%;
 }
 .main__projects {
     width: 100%;
     display: flex;
-    margin-left: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 .projects__img img{
@@ -338,7 +351,7 @@ h2.fill-animation::before {
     border-radius: 20%;
 }
 .projects__cardbox{
-    width: 45%;
+    max-width: 45%;
     margin-right: 25px;
     text-align: center;
     justify-content: center;
@@ -352,11 +365,12 @@ h2.fill-animation::before {
     margin: 20px;
 }
 .projects{
-    height: 120vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 300px;
+    justify-content: center;
 }
 .title{
     text-align: center;
@@ -367,4 +381,190 @@ footer {
     width:100%;
     height:60px;
     background:#6cf;
+}
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        padding: 0px;
+    }
+  
+    .content {
+      padding: 5%;
+    }
+  
+    .service-container .service__item {
+      width: 45%;
+      margin-right: 10px;
+      margin-left: 0;
+      justify-content: center;
+    }
+    .service-container__son{
+        margin-right: 0;
+        align-items: center;
+        justify-content: space-around;
+    }
+  
+    .education-section,
+    .experience-section {
+      width: 100%;
+      margin: 0;
+    }
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2%;
+    }
+    .card-box{
+        margin: 0;
+    }
+    .content {
+        padding: 0%;
+    }
+    .service-container{
+        margin-right: 25px;
+    }
+    .resume{
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+    }
+    .experience-section{
+        margin-top: 25px;
+    }
+    .mg_top{
+        padding-top: 20rem;
+    }
+    .card-box-2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;    
+    }
+
+    .contact{
+        margin: 10%;
+    }
+    .contact__icons a{
+        align-self: center;
+        margin: 0;
+        padding: 0;
+    }
+    .contact__github{
+        align-items: center;
+    }
+    .contact__linkedin{
+        align-items: center;
+    }
+    .contact__wpp{
+        align-items: center;
+        white-space: inherit;
+    }
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+    .projects__cardbox{
+        display: flex;
+    }
+    .main__projects{
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .content{
+        padding: 0;
+    }
+}
+  @media (max-width: 576px) {
+  
+    .card-box {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card-box-picture img {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .card-box-body {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+  
+    .service-container .service__item {
+      width: 100%;
+    }
+  
+    .projects__img img {
+      width: 290px;
+      height: 220px;
+    }
+  }
+@media (max-width: 990px) {
+ .card-box{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+ }
+ .education-section{
+    height: 100%;
+ }
+ .resume{
+    height:350px;
+ }
+ .experience-section{
+    height: 100%;
+ }
+.projects__img img{
+    width: 240px;
+    height: 210px;
+}
+.projects__cardbox{
+    max-width: 40%;
+    justify-content: center
+}
+}
+@media (max-width:1275px
+){
+    .projects__cardbox{
+        width: 100%;
+    }
+     .card-box-2{
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+    }
+    .contact__github{
+        justify-content: center;
+        align-items: center;
+    }
+    .contact__wpp{
+        justify-content: center;
+        align-items: center;
+    }
+    .contact__linkedin{
+        justify-content: center;
+        align-items: center;
+    }
+    #contactSection{
+        scroll-margin-top: -300px
+        ;
+    }
+}
+@media (max-width:1650px){
+    .projects__img img{
+        width: 280px;
+        height: 250px;
+    }
+    .projects__cardbox{
+        max-width: 100%;
+        justify-content: center;
+        margin-left:0;
+    }
 }
